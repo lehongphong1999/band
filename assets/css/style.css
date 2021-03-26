@@ -1,0 +1,390 @@
+/* Reset CSS */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+
+/* row */
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.row-3{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+/* Col */
+.col{
+    float: left;
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+}
+.col-full{
+    width: 100% ;
+}
+.col-half{
+    width: 50% ;
+}
+.col-3{
+    width: 33.33333333% ;
+}
+/* Margin */
+.mt-8{
+    margin-top: 8px !important;
+}
+.mt-16{
+    margin-top: 16px !important;
+}
+.mt-32{
+    margin-top: 32px !important;
+}
+.text-center{
+    text-align: center;
+}
+
+/* 
+1 - Vị trí
+2 - Kích thước
+3 - Màu sắc
+4 - Hình dạng 
+*/
+
+#main{
+    overflow: hidden;
+}
+
+.color-black{
+    color: #000;
+}
+.color-white{
+    color: white;
+}
+.color-opcwwhite{
+    color: rgb(133, 127, 127);
+}
+
+#header{
+    height: 46px;
+    background-color: #000;
+    top: 0;
+    right: 0;
+    left: 0;
+    position: fixed;
+    z-index: 1;
+}
+#nav {
+    display: inline-block;
+}
+#nav li {
+    position: relative;
+    list-style: none;
+    font-weight: 500;
+}
+#nav li:hover .subnav{
+    display: block;
+}
+#nav > li 
+{
+    display: inline-block;
+}
+#nav > li > a
+{
+    color: white;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+#nav li a{
+    line-height: 46px;
+    padding: 0 24px ;
+}
+#nav > li:hover > a,
+#nav .subnav li:hover a
+{
+    color: #000;
+    background-color: #ccc;
+    transition: .3s;
+}
+
+#nav .subnav {
+    display: none;
+    position: absolute;
+    background-color: #fff; 
+    box-shadow: rgb(0,0,);
+    min-width: 160px;
+    top: 100%;
+}
+#nav .subnav a{
+    color: #000;
+    padding-left: 16px;
+    display: inline-block;
+    width: 100%;
+}
+.more{
+    font-size: 12px;
+    padding-top: 5px;
+}
+#bt-menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#search,#bt-menu {
+    float: right;
+    cursor: pointer;
+}
+#search .search-icon, 
+#bt-menu .bt-menu-icon
+{
+    color: #fff;
+    line-height: 46px;
+    font-size: 17px;
+    padding: 0 21px 0 21px;
+}
+#bt-menu:hover {
+    background-color: #ccc;
+}
+#search:hover{
+    background-color: #f44336;
+}
+#slider{
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url(..//image/chicago.jpg) top center/cover no-repeat;
+    position: relative;
+}
+#slider .content{
+    position: absolute;
+    bottom: 47px;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+}
+#slider .content .content-heading{
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+#slider .content .content-text{
+    font-size: 15px;
+    font-weight: 550;
+    text-shadow: 0 0 1px #000;
+}
+
+#container #content .content-section{
+    padding: 64px 16px 112px;
+    width: 800px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#container #content .section-heading{
+    font-weight: 500;
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 4px;
+}
+#container #content .section-sub-heading{
+    font-size: 15px;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-style: italic;
+    color: rgb(163, 161, 161);
+    font-weight: 550;
+}
+#container #content .about-content{
+    text-align: justify;
+    font-size: 15px;
+    line-height: 1.4;
+    
+}
+#band .section-heading{
+    margin-top: 15px;
+}
+#container .member-list {
+    margin-top: 47px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.member-list .member-item .member-name{
+    
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+.member-list .member-item .member-img{
+    width: 60%;
+    border-radius: 5px;
+}
+.tour-section {
+    background-color: #000;
+}
+.tour-section .content-section{
+    color: white;
+}
+.tour-section .content-section .tour-list{
+    margin-top: 50px;
+    background-color: white;
+    height: 120px;
+    list-style: none;
+}
+.tour-list li{
+    padding: 10px 16px;
+    border-bottom: 1px solid rgb(139, 136, 136) ;
+    height: 40px;
+}
+.tour-list li:last-child{
+    border-bottom: none;
+}
+.tour-list .Sold-out{
+    width: 70px;
+    background-color: #f44336;
+    color: white;
+    text-align: center;
+    padding: 0px 8px;
+    margin-left: 16px;
+}
+.tour-list .number-tickets{
+    width: 25px;
+    height: 23px;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    float: right;
+    text-align: center;
+    margin-right: 16px;
+    padding-top: 3px;
+    
+}
+.tour-section .tickets-list {
+    margin-top: 16px;
+} 
+.tickets-item{
+    padding: 0 8px;
+}
+.tickets-item img{ 
+    height: 185px;
+    width: 100%;
+    text-align: center;
+    display: block;
+}
+.tickets-item img:hover{ 
+    opacity: 0.6;
+}
+.tickets-body{
+    color: black;
+    background-color: white;
+    padding: 0 16px;
+}
+.tickets-body .tickets-heading{
+    padding-top: 20px;
+}
+.tickets-body .tickets-day{
+    margin: 25px 0;
+    font-style: italic;
+    color: rgb(163, 161, 161);
+}
+.tickets-body .tickets-content{
+    margin-bottom: 15px;
+}
+.tickets-body .bt-buy{
+    padding: 8px 16px;
+    color: white;
+    background-color: black;
+    margin-bottom: 25px;
+    border-radius: 4px;
+    border: none;
+}
+.tickets-body .bt-buy:hover{
+    cursor: pointer;
+    color: #000;
+    background-color: #ccc;
+    border: #ccc solid 2px;
+}
+.contact-body{
+    margin-top: 45px;
+}
+
+.contact-info p{
+    padding: 3px 0px;
+    font-size: 18px;
+}
+.contact-info i{
+    width: 30px;
+}
+.contact-info a{
+    color: rgb(29, 26, 218);
+}
+.contact-info a:hover{
+    color: rgb(29, 26, 218);
+    opacity: 0.8;
+}
+.contact-form{
+    font-size: 15px;
+}
+.form-control{
+    width: 100%;
+    padding: 10px;
+}
+.contact-send input{
+    height: 40px;
+    border-radius: 3px;
+    border: #ccc solid 1px;
+    outline: none;
+}
+.btn-send{
+    width: 70px;
+    background-color: #000;
+    color:white;
+    padding:  8px 16px;
+    margin-top: 25px;
+    cursor: pointer;
+    float: right;
+    appearance: none;
+    -webkit-appearance: none;
+    
+}
+.btn-send:hover{
+    background-color: #ccc;
+    color: #000;
+}
+#map img{
+    width: 100%;
+}
+
+#footer{
+    height: 215px;
+    text-align: center;
+
+}
+.icon-list{
+    padding-top: 70px;
+}
+.icon-list a{
+    font-size: 30px;
+    color: rgb(36, 35, 35);
+}
+.icon-list a:hover{
+    color: rgb(117, 113, 113);
+}
+#footer p a{
+    color: rgb(29, 26, 218);
+}
+#footer p a:hover{
+    color: rgb(29, 26, 218);
+    opacity: 0.8;
+}

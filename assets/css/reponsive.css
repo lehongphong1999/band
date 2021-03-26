@@ -1,0 +1,83 @@
+/* PC */
+@media (min-width: 1024px){
+
+}
+
+/* Tablet and Mobile*/
+@media (max-width: 1023px){
+    .bt-buy{
+        padding: 15px 16px;
+    }
+    .form-control{
+        padding: 23px;
+    }
+    .icon-list a {
+        padding: 0 7px;
+        font-size: 40px;
+    }
+    .form-control{
+        font-size: 16px;
+    }
+    .btn-send{
+        font-size: 18px;
+
+    }
+    #footer p {
+        font-size: 24px;
+    }
+}
+/* Tablet */
+@media (min-width: 740px)and (max-width: 1023px){
+    
+}
+/* Mobile */
+@media (max-width: 739px){
+    .s-fw-button{
+        width: 100%;
+    }
+    .s-col-full{
+        width: 100%;
+    }
+    .s-mt-16{
+        margin-top: 16px;
+    }
+    .s-mt-8{
+        margin-top: 8px;
+    }
+    #header{
+        overflow: hidden;
+    }
+    #nav{
+        display: block !important;
+    }
+    #nav > li{
+        display: block !important;
+    }
+    #nav > li:first-child{
+        display: inline-block !important;
+    }
+    #nav > li > a
+    {
+        display: block !important;
+    }
+    #nav .subnav{
+        position: initial;
+        background-color: black;
+    }
+    #nav .subnav li a{
+        padding: 1px 41px;
+        color: white;
+    }
+    #search{
+        display: none;
+    }
+    #bt-menu {
+        display: block;
+    }
+    #band .member-item{
+        margin-top: 30px;
+    }
+    .contact-info p{
+        padding: 3px 10px;
+    }
+}

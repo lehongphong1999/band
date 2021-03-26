@@ -1,0 +1,28 @@
+1 Website One Page
+
+1 - header
+ 	1 - Navigation
+		1 - Dropdown
+	2 - search
+2 - Banner 
+	1 - Slider
+	2 - Content
+3 - Intros
+	1 - Content
+	2 - Item_Image
+3 -  Tuor Date
+	1 - Content
+	2 - Item 
+		1- Image
+		2 - Date
+		3 - Content
+		4 - Button
+4 - Contact
+	1 - Address
+	2 - Input
+	3 - Button
+5 - Map - Image
+
+6 - Footer
+	1 - icon
+	2- text
